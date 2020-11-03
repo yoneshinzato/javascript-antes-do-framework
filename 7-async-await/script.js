@@ -1,15 +1,16 @@
-//https://ranekapi.origamid.dev/json/api/produto/'
+const grupoA = 100
+const grupoB = 300
 
-async function fetchProdutos(url) {
-    const response = await fetch(url)
-    const jsonBody = await response.json()
-    return jsonBody
-    console.log(jsonBody)
-
+if (grupoA > grupoB) {
+    console.log('teste')
 }
 
-const requisicao = fetchProdutos('https://ranekapi.origamid.dev/json/api/produto')
+const vencedor = grupoA > grupoB ? 'Grupo A ganhou' : 'Grupo B ganhou'
 
-requisicao.then(response => {
-    console.log(response)
-})
+console.log(vencedor)
+
+const areaQuadrado = l => l * l
+
+const grupoAvenceu = grupoA > 150 && 'Grupo A Vencedor'
+
+console.log(grupoAvenceu)
